@@ -23,7 +23,7 @@ This package exposes two Functions,
 [isUnicodeSupportedSync](https://github.com/UltiRequiem/deno_is_unicode_supported/blob/main/mod.js#L5).
 
 ```typescript
-@deno-types="https://deno.land/x/is_unicode_supported/mod.d.ts"
+// @deno-types="https://deno.land/x/is_unicode_supported/mod.d.ts"
 import isUnicodeSupported, {
 	isUnicodeSupportedSync,
 } from "https://deno.land/x/is_unicode_supported/mod.js";
