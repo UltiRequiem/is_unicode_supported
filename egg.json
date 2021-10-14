@@ -1,10 +1,10 @@
 {
   "$schema": "https://x.nest.land/eggs@0.3.9/src/schema.json",
-  "name": "",
-  "entry": "./mod.ts",
-  "description": "",
+  "name": "is_unicode_supported",
+  "entry": "./mod.js",
+  "description": "Detect whether the terminal supports Unicode",
   "homepage": "https://github.com/UltiRequiem/deno_is_unicode_supported",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "releaseType": "patch",
   "unstable": false,
   "unlisted": false,
@@ -18,5 +18,5 @@
     ".git"
   ],
   "checkInstallation": false,
-  "check": false
+  "check": true
 }

@@ -8,7 +8,7 @@
 
 You can get this package by [nest.land](https://nest.land/package/is_unicode_supported),
 [deno.land](https://deno.land/x/is_unicode_supported) or
-[denopkg](https://denopkg.com/UltiRequiem/deno_is_unicode_supported/mod.ts).
+[denopkg](https://denopkg.com/UltiRequiem/deno_is_unicode_supported/mod.js).
 
 > Detect whether the terminal supports Unicode, port of [is-unicode-supported](https://github.com/sindresorhus/is-unicode-supported).
 
