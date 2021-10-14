@@ -1,15 +1,15 @@
 {
   "$schema": "https://x.nest.land/eggs@0.3.9/src/schema.json",
-    "name": "",
+  "name": "",
   "entry": "./mod.ts",
   "description": "",
-  "homepage": "https://github.com/UltiRequiem/deno-",
+  "homepage": "https://github.com/UltiRequiem/deno_is_unicode_supported",
   "version": "0.0.0",
   "releaseType": "patch",
   "unstable": false,
   "unlisted": false,
   "files": [
-    "mod.ts",
+    "mod.js",
     "README.md"
   ],
   "ignore": [
@@ -17,8 +17,6 @@
     ".github",
     ".git"
   ],
-  "checkFormat": "deno fmt",
-  "checkTests": "deno test",
-  "checkInstallation": true,
-  "check": true
+  "checkInstallation": false,
+  "check": false
 }

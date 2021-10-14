@@ -1,36 +1,46 @@
-# Template for Deno
+# is_unicode_supported
 
 [![GitMoji](https://img.shields.io/badge/Gitmoji-%F0%9F%8E%A8%20-FFDD67.svg)](https://gitmoji.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-![Lines Of Code](https://img.shields.io/tokei/lines/github.com/UltiRequiem/deno-template?color=blue&label=Total%20Lines)
-![CodeQL](https://github.com/UltiRequiem/deno-template/workflows/CodeQL/badge.svg)
-![Lint](https://github.com/UltiRequiem/deno-template/workflows/Lint/badge.svg)
-![Test](https://github.com/UltiRequiem/deno-template/workflows/Tests/badge.svg)
+![Lines Of Code](https://img.shields.io/tokei/lines/github.com/UltiRequiem/deno_is_unicode_supported?color=blue&label=Total%20Lines)
+![CodeQL](https://github.com/UltiRequiem/deno_is_unicode_supported/workflows/CodeQL/badge.svg)
+![Lint](https://github.com/UltiRequiem/deno_is_unicode_supported/workflows/Lint/badge.svg)
+![Test](https://github.com/UltiRequiem/deno_is_unicode_supported/workflows/Tests/badge.svg)
 
-You can get this package by [nest.land](https://nest.land/package/template),
-[deno.land](https://deno.land/x/template) or [denopkg](https://denopkg.com/UltiRequiem/deno-template/mod.ts).
+You can get this package by [nest.land](https://nest.land/package/is_unicode_supported),
+[deno.land](https://deno.land/x/is_unicode_supported) or
+[denopkg](https://denopkg.com/UltiRequiem/deno_is_unicode_supported/mod.ts).
+
+> Detect whether the terminal supports Unicode, port of [is-unicode-supported](https://github.com/sindresorhus/is-unicode-supported).
+
+This can be useful to decide whether to use Unicode characters or fallback ASCII characters in command-line output.
+
+Note that the check is quite naive. It just assumes all non-Windows terminals support Unicode and hard-codes which Windows terminals that do support Unicode.
 
 ## Usage
 
 This package exposes two Functions,
-[sum](https://github.com/UltiRequiem/deno-sum/blob/main/mod.ts#L9) and
-[sumSync](https://github.com/UltiRequiem/deno-sum/blob/main/mod.ts#L18).
+[isUnicodeSupported](https://github.com/UltiRequiem/deno_is_unicode_supported/blob/main/mod.js#L1) and
+[isUnicodeSupportedSync](https://github.com/UltiRequiem/deno_is_unicode_supported/blob/main/mod.js#L5).
 
 ```typescript
-import sum, { sumSync } from "https://deno.land/x/sum/mod.ts";
+@deno-types="https://deno.land/x/is_unicode_supported/mod.d.ts"
+import isUnicodeSupported, {
+	isUnicodeSupportedSync,
+} from "https://deno.land/x/is_unicode_supported/mod.js";
 
-console.log(await sum(45, "a")); // "45a"
-
-async function somethingAsync() {
-  console.log(await sum(2, 4, 5)); // 11
-}
-
-somethingAsync();
-
-sum(34, 56).then((number) => console.log(number)); // 90
-
-console.log(sumSync([2, 4, 5, 6])); // 17
+const canIHaveEmojis = await isUnicodeSupported(); // isUnicodeSupported();
 ```
+
+## API
+
+### isUnicodeSupported()
+
+Returns a `Promize<boolean>` for whether the terminal supports Unicode.
+
+### isUnicodeSupportedSync()
+
+Returns a `boolean` for whether the terminal supports Unicode.
 
 ### License
 
