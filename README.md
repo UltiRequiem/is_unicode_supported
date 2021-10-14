@@ -5,7 +5,6 @@
 ![Lines Of Code](https://img.shields.io/tokei/lines/github.com/UltiRequiem/deno_is_unicode_supported?color=blue&label=Total%20Lines)
 ![CodeQL](https://github.com/UltiRequiem/deno_is_unicode_supported/workflows/CodeQL/badge.svg)
 ![Lint](https://github.com/UltiRequiem/deno_is_unicode_supported/workflows/Lint/badge.svg)
-![Test](https://github.com/UltiRequiem/deno_is_unicode_supported/workflows/Tests/badge.svg)
 
 You can get this package by [nest.land](https://nest.land/package/is_unicode_supported),
 [deno.land](https://deno.land/x/is_unicode_supported) or
