@@ -1,3 +1,5 @@
+/// <reference types="./mod.d.ts" />
+
 export default function isUnicodeSupported() {
   return Promise.resolve(isUnicodeSupportedSync());
 }
