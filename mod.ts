@@ -1,10 +1,4 @@
-/// <reference types="./mod.d.ts" />
-
-export default function isUnicodeSupported() {
-  return Promise.resolve(isUnicodeSupportedSync());
-}
-
-export function isUnicodeSupportedSync() {
+export function isUnicodeSupported() {
   if (Deno.build.os !== "windows") {
     return Deno.env.get("TERM") !== "linux";
   }
