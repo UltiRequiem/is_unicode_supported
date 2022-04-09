@@ -9,6 +9,11 @@ Deno.test({
   ignore: Deno.build.os !== "windows",
   name: "windows",
   fn: () => {
+    assert(isUnicodeSupported());
+
+    assert(isUnicodeSupported("linux"));
+    assert(isUnicodeSupported("darwin"));
+
     Deno.env.delete("CI");
     Deno.env.delete("WT_SESSION");
     Deno.env.delete("TERM");

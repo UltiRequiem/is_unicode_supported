@@ -7,8 +7,8 @@ Detect whether the terminal supports Unicode.
 isUnicodeSupported(); //=> true
 ```
 */
-export function isUnicodeSupported() {
-  if (Deno.build.os !== "windows") {
+export function isUnicodeSupported(platform = Deno.build.os) {
+  if (platform !== "windows") {
     return Deno.env.get("TERM") !== "linux";
   }
 
