@@ -2,6 +2,7 @@
 Detect whether the terminal supports Unicode.
 
 @example
+
 ```javascript
 isUnicodeSupported(); //=> true
 ```
