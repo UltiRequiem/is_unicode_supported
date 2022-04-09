@@ -1,6 +1,6 @@
 # is_unicode_supported
 
-[![Code Coverage](https://codecov.io/gh/ultirequiem/is_unicode_supported/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/REPO)
+[![Code Coverage](https://codecov.io/gh/ultirequiem/is_unicode_supported/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/is_unicode_supported)
 [![Deno Doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/is_unicode_supported/mod.ts)
 
 Detect whether the terminal supports Unicode, port of
