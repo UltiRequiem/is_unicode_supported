@@ -34,11 +34,11 @@ jobs:
         run: deno test --allow-env --coverage=./cov
 
       - name: Generate Coverage
-        if: matrix.os == 'ubuntu-latest'
+        if: matrix.os == 'windows-latest'
         run: deno coverage --unstable --lcov ./cov > cov.lcov
 
       - name: Upload Coverage
-        if: matrix.os == 'ubuntu-latest'
+        if: matrix.os == 'windows-latest'
         uses: codecov/codecov-action@v2
         with:
           files: cov.lcov
