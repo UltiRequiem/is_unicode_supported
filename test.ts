@@ -6,7 +6,7 @@ Deno.test("main", () => {
 });
 
 Deno.test({
-  only: Deno.build.os === "windows",
+  ignore: Deno.build.os !== "windows",
   name: "windows",
   fn: () => {
     Deno.env.delete("CI");
