@@ -1,0 +1,18 @@
+import { assert } from "https://deno.land/std@0.132.0/testing/asserts.ts";
+import { isUnicodeSupported } from "./mod.ts";
+
+Deno.test("main", () => {
+  assert(isUnicodeSupported());
+});
+
+Deno.test({
+  only: Deno.build.os === "windows",
+  name: "windows",
+  fn: () => {
+    Deno.env.delete("CI");
+    Deno.env.delete("WT_SESSION");
+    Deno.env.delete("TERM");
+
+    assert(!isUnicodeSupported());
+  },
+});

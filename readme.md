@@ -9,9 +9,8 @@ Detect whether the terminal supports Unicode, port of
 This can be useful to decide whether to use Unicode characters or fallback ASCII
 characters in command-line output.
 
-> Note that the check is quite naive. It just assumes all non-Windows terminals
-> support Unicode and hard-codes which Windows terminals that do support
-> Unicode.
+Note that the check is quite naive. It just assumes all non-Windows terminals
+support Unicode and hard-codes which Windows terminals that do support Unicode.
 
 ## Usage
 
@@ -20,7 +19,7 @@ The API is the same on all this platforms ✔️
 ### [Deno 🦕](https://deno.land/x/is_unicode_supported)
 
 ```javascript
-import isUnicodeSupported from "https://deno.land/x/is_unicode_supported/mod.ts";
+import { isUnicodeSupported } from "https://deno.land/x/is_unicode_supported/mod.ts";
 
 isUnicodeSupported(); //=> true
 ```
@@ -28,7 +27,7 @@ isUnicodeSupported(); //=> true
 ### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/is-unicode-supported)
 
 ```javascript
-import { timeZones } from "@ultirequiem/is-unicode-supported";
+import { isUnicodeSupported } from "@ultirequiem/is-unicode-supported";
 ```
 
 ## Documentation
