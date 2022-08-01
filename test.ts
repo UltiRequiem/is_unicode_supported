@@ -1,4 +1,4 @@
-import { assert } from "https://deno.land/std@0.146.0/testing/asserts.ts";
+import { assert } from "https://deno.land/std@0.150.0/testing/asserts.ts";
 import { isUnicodeSupported } from "./mod.ts";
 
 Deno.test("main", () => {
