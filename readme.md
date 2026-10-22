@@ -1,11 +1,12 @@
 # is_unicode_supported
 
+Detect whether the terminal supports Unicode, port of
+
 [![npm](https://img.shields.io/npm/v/@ultirequiem/is-unicode-supported?logo=npm&color=cb3837)](https://www.npmjs.com/package/@ultirequiem/is-unicode-supported)
 [![npm downloads](https://img.shields.io/npm/dm/@ultirequiem/is-unicode-supported?color=cb3837)](https://www.npmjs.com/package/@ultirequiem/is-unicode-supported)
 [![CI](https://github.com/UltiRequiem/is_unicode_supported/actions/workflows/ci.yaml/badge.svg)](https://github.com/UltiRequiem/is_unicode_supported/actions/workflows/ci.yaml)
 [![codecov](https://codecov.io/gh/UltiRequiem/is_unicode_supported/graph/badge.svg)](https://codecov.io/gh/UltiRequiem/is_unicode_supported)
 
-Detect whether the terminal supports Unicode, port of
 [is-unicode-supported](https://github.com/sindresorhus/is-unicode-supported).
 
 This can be useful to decide whether to use Unicode characters or fallback ASCII
