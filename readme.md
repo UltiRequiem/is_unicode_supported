@@ -1,6 +1,9 @@
 # is_unicode_supported
 
-[![Code Coverage](https://codecov.io/gh/ultirequiem/is_unicode_supported/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/is_unicode_supported)
+[![npm](https://img.shields.io/npm/v/@ultirequiem/is-unicode-supported?logo=npm&color=cb3837)](https://www.npmjs.com/package/@ultirequiem/is-unicode-supported)
+[![npm downloads](https://img.shields.io/npm/dm/@ultirequiem/is-unicode-supported?color=cb3837)](https://www.npmjs.com/package/@ultirequiem/is-unicode-supported)
+[![CI](https://github.com/UltiRequiem/is_unicode_supported/actions/workflows/ci.yaml/badge.svg)](https://github.com/UltiRequiem/is_unicode_supported/actions/workflows/ci.yaml)
+[![codecov](https://codecov.io/gh/UltiRequiem/is_unicode_supported/graph/badge.svg)](https://codecov.io/gh/UltiRequiem/is_unicode_supported)
 
 Detect whether the terminal supports Unicode, port of
 [is-unicode-supported](https://github.com/sindresorhus/is-unicode-supported).
@@ -19,7 +22,7 @@ npm install @ultirequiem/is-unicode-supported
 
 ## Usage
 
-ESM only: the same import works in Node.js, Bun and browsers.
+ESM only, types included: the same import works in Node.js, Bun and browsers.
 
 ```javascript
 import { isUnicodeSupported } from "@ultirequiem/is-unicode-supported";
@@ -29,12 +32,12 @@ isUnicodeSupported(); //=> true
 
 ## Support
 
-Open an Issue, I will check it a soon as possible 👀
+Open an Issue, I will check it as soon as possible 👀
 
 If you want to hurry me up a bit
 [send me a tweet](https://twitter.com/UltiRequiem) 😆
 
-Don't forget to start the repo ⭐
+Don't forget to star the repo ⭐
 
 ## Versioning
 
